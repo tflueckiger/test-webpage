@@ -2,32 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Research Paper</title>
+  <title>CalibProj IPCAI 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Automatic Calibration of a Multi-Camera System with Limited Overlapping Fields of View for 3D Surgical Scene Reconstruction">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Title of the Paper</h1>
-  <h2>Your Name</h2>
-  <h3>Conference Name or Date</h3>
+<div class="container-fluid banner-background">
+  <div class="banner pt-5 pb-4">
+    <div class="title">
+      <div class="title-logo">
+        <img class="logo" alt="logo" src="calib-proj-logo.png">
+      </div>
+      <div class="title-text">
+        <h1>CalibProj</h1>
+      </div>
+    </div>
+    <h2>Automatic Calibration of a Multi-Camera System
+with Limited Overlapping Fields of View for
+3D Surgical Scene Reconstruction<br>IPCAI 2025 Extended Oral</h2>
 
-  <p><a href="your_paper_link.pdf" target="_blank">Download the paper (PDF)</a></p>
+    <div class="row author-list pt-3">
+      <div class="col-sm">
+        <div class="author"><b>Tim Flückiger</b><sup>1,2*</sup></div>
+      </div>
+      <div class="col-sm">
+        <div class="author">Jonas Hein<sup>1,2</sup></div>
+      </div>
+      <div class="col-sm">
+        <div class="author">Valery Fischer<sup>1</sup></div>
+      </div>
+      <div class="col-sm">
+        <div class="author">Philipp Fürnstahl<sup>1</sup></div>
+      </div>
+      <div class="col-sm">
+        <div class="author">Lilian Calvet<sup>1</sup></div>
+      </div>
+    </div>
+    <div class="text-center mt-2">
+      <p><sup>1</sup>Research in Orthopedic Computer Science, University Hospital Balgrist, University of Zurich, Switzerland<br>
+         <sup>2</sup>Computer Vision and Geometry Group, ETH Zurich, Switzerland<br>
+         <sup>*</sup>Corresponding author</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid container-center container-main">
+<div class="row links-list justify-content-center">
+        <div class="col-auto research-link">
+          <a target="_blank" href="TODO">
+            <img class="link-icon" alt="Paper Icon" src="paper_thumbnail.png" style="border:0.5px solid rgb(209, 209, 209)">
+            <p class="research-link-name">PAPER</p>
+          </a>
+        </div>
+
+        <div class="col-auto research-link">
+          <a target="_blank" href="https://github.com/tflueckiger/calib-proj">
+            <img class="link-icon" alt="Code Icon" src="github.svg">
+            <p class="research-link-name">CODE</p>
+          </a>
+        </div>
+
+        <div class="col-auto research-link">
+          <a href="doc/calib-proj_slides.pdf" target="_blank">
+            <div class="link-icon" style="padding-top:5px;padding-bottom:5px">
+              <img alt="Slides Icon" src="slides_thumbnail.png" style="height:50px;border:0.5px solid black">
+            </div>
+            <p class="research-link-name">SLIDES</p>
+          </a>
+        </div>
+
+        <div class="col-auto research-link">
+          <a href="doc/calib-proj_poster.pdf" target="_blank">
+            <div class="link-icon" style="padding-top:5px;padding-bottom:5px">
+              <img alt="Poster Icon" src="poster_thumbnail.png" style="height:50px;border:0.5px solid black">
+            </div>
+            <p class="research-link-name">POSTER</p>
+          </a>
+        </div>
+
+   
+      </div>
+
+  <p class="tldr">We present a method for automatic calibration of multi-camera systems with minimal overlap between fields of view, applied to surgical scene reconstruction.</p>
+
+  <hr>
 
   <h3>Abstract</h3>
-  <p>
-    This is a short abstract of the paper. It briefly explains the research problem,
-    the proposed method, and key results. This section should give the reader a quick
-    overview of what the paper is about.
+  <p class="abstract">
+    The purpose of this study is to develop an automated and accurate external camera calibration method for multi-camera systems used in 3D surgical scene reconstruction (3D-SSR), eliminating the need for operator intervention or specialized expertise. The method specifically addresses the problem of limited overlapping fields of view caused by significant variations in optical zoom levels and camera locations. We contribute a novel, fast, and fully automatic calibration method based on the projection of multi-scale markers (MSMs) using a ceiling-mounted projector. MSMs consist of 2D patterns projected at varying scales, ensuring accurate extraction of well distributed point correspondences across significantly different viewpoints and zoom levels. Validation is performed using both synthetic and real data captured in a mock-up OR, with comparisons to traditional manual marker-based methods as well as markerless calibration methods. The method achieves accuracy comparable to manual, operator-dependent calibration methods while exhibiting higher robustness under conditions of significant differences in zoom levels. Additionally, we show that state-of-the-art Structure-from-Motion (SfM) pipelines are ineffective in 3D-SSR settings, even when additional texture is projected onto the OR floor. The use of a ceiling-mounted entry-level projector proves to be an effective alternative to operator-dependent, traditional marker-based methods, paving the way for fully automated 3D-SSR.
+
   </p>
 
   <h3>BibTeX Citation</h3>
-  <pre>
-@inproceedings{your2025paper,
-  title     = {Title of the Paper},
-  author    = {Your Name},
+  <pre>@inproceedings{fluckiger2025automatic,
+  title     = {Automatic Calibration of a Multi-Camera System with Limited Overlapping Fields of View for 3D Surgical Scene Reconstruction},
+  author    = {Tim Flückiger and Jonas Hein and Valery Fischer and Philipp Fürnstahl and Lilian Calvet},
   booktitle = {Conference Name},
-  year      = {2025},
-}
-  </pre>
+  year      = {2025}
+}</pre>
+</div>
 
+<footer>© 2025 Tim Flückiger</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
