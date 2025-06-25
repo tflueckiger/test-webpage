@@ -18,7 +18,7 @@
   <div class="banner pt-5 pb-4">
     <div class="title">
       <div class="title-logo">
-        <img class="logo" alt="logo" src="calib-proj-logo.png">
+        <img class="logo" alt="logo" src="logo.png">
       </div>
       <div class="title-text">
         <h1>CalibProj</h1>
@@ -90,7 +90,7 @@ with Limited Overlapping Fields of View for
    
       </div>
 
-  <p class="tldr">We present a method for automatic calibration of multi-camera systems with minimal overlap between fields of view, applied to surgical scene reconstruction.</p>
+  <p class="tldr">We present CalibProj, a method for automatic external calibration of multi-camera systems with limited overlap between fields of view.</p>
 
   <hr>
 
@@ -99,6 +99,45 @@ with Limited Overlapping Fields of View for
     The purpose of this study is to develop an automated and accurate external camera calibration method for multi-camera systems used in 3D surgical scene reconstruction (3D-SSR), eliminating the need for operator intervention or specialized expertise. The method specifically addresses the problem of limited overlapping fields of view caused by significant variations in optical zoom levels and camera locations. We contribute a novel, fast, and fully automatic calibration method based on the projection of multi-scale markers (MSMs) using a ceiling-mounted projector. MSMs consist of 2D patterns projected at varying scales, ensuring accurate extraction of well distributed point correspondences across significantly different viewpoints and zoom levels. Validation is performed using both synthetic and real data captured in a mock-up OR, with comparisons to traditional manual marker-based methods as well as markerless calibration methods. The method achieves accuracy comparable to manual, operator-dependent calibration methods while exhibiting higher robustness under conditions of significant differences in zoom levels. Additionally, we show that state-of-the-art Structure-from-Motion (SfM) pipelines are ineffective in 3D-SSR settings, even when additional texture is projected onto the OR floor. The use of a ceiling-mounted entry-level projector proves to be an effective alternative to operator-dependent, traditional marker-based methods, paving the way for fully automated 3D-SSR.
 
   </p>
+
+  <div class="text-center">
+  <img src="SDT_ORX_Illustration.png" alt="ORX" class="img-fluid">
+  <p class="pt-1 bm-1">TODO</p>
+</div>
+
+<h3>Calibration Setup</h3>
+<p class="abstract">
+ We propose to use a ceiling-mounted projector to project multi-scale markers (MSMs) onto the operating room floor. 
+</p>
+<div class="text-center">
+  <img src="setup.png" alt="Calibration Setup" class="img-fluid">
+  <p class="pt-1 bm-1">Overview of the calibration setup used in our system.</p>
+</div>
+
+<h3>Results</h3>
+<p class="abstract">
+TODO</p>
+<div class="text-center">
+  <img src="success_rates.png" alt="Results" class="img-fluid">
+  <p class="pt-1 bm-1">Success rates in % with
+a threshold of 0.5/2/5 pixel.</p>
+</div>
+
+
+<div class="text-center">
+  <img src="application_illustration.png" alt="application_illustration" class="img-fluid">
+  <p class="pt-1 bm-1">Success rates in % with
+a threshold of 0.5/2/5 pixel.</p>
+</div>
+
+
+ <h3>Application to 3D Human Pose Estimation</h3>
+  <div class="text-center">
+   <video class="lozad embed-responsive" autoplay loop muted playsinline>
+            <source src="ff_full_render1.mp4" type="video/mp4">
+          </video>
+    <p class="pt-1 bm-1">TODO.</p>
+  </div>
 
   <h3>BibTeX Citation</h3>
   <pre>@inproceedings{fluckiger2025automatic,
@@ -114,5 +153,10 @@ with Limited Overlapping Fields of View for
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script type="text/javascript">
+  const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+  observer.observe();
+</script>
 </body>
 </html>

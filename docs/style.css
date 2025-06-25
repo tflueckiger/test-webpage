@@ -45,11 +45,11 @@ a {
 }
 
 img.logo {
-    padding-bottom: 1px;
+    padding-bottom: 10px;
     padding-right: 25px;
     position: relative;
     max-width: 150px;
-    vertical-align: bottom;
+    vertical-align: -30px;
 }
 
 .title-text {
@@ -132,6 +132,11 @@ h2 {
     width: 100%;
     max-width: 500px;
     /*clip-path: polygon(49% 10%, 51% 1%, 68% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%, 21% 10%);*/
+}
+
+.img-fluid {
+    max-width: 100%;
+    width: auto;
 }
 
 .tldr {
